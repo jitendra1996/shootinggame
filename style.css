@@ -1,0 +1,133 @@
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+#root{
+    width: 40%;
+    margin: 2rem auto;
+    font-size: 1.6rem;
+    font-family: sans-serif;
+    font-weight: 400;
+    line-height: 1.5rem;
+    padding: 2rem;
+    border:.2rem solid black;
+    border-radius: .5rem;
+}
+
+#backdrop{
+    position: absolute;
+    top: 0;
+    display: none;
+    width: 100%;
+    height: 100vh;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.5rem;
+    font-family: sans-serif;
+    background-color: black;
+    color: #eee;
+    cursor: pointer;
+}
+
+.root__gamecount{
+    margin-bottom: 1rem;
+    color: #999;
+}
+
+#result{
+    color: #999;
+    font-size: 1.6rem;
+    font-family: sans-serif;
+    font-weight: 400;
+    line-height: 1.5rem;
+}
+
+.btn{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding: 1rem 2rem;
+    background: blueviolet;
+    color: #fff;
+    font-size: 1.6rem;
+    font-family: sans-serif;
+    font-weight: 400;
+    border: none;
+    border-radius: .5rem;
+    cursor: pointer;
+}
+
+.root__player1{
+    color: #999;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-size: 1.6rem;
+    font-family: sans-serif;
+    font-weight: 400;
+}
+
+.root__player2{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    color: #999;
+    font-size: 1.6rem;
+    font-family: sans-serif;
+    font-weight: 400;
+}
+
+.backdrop__gameplayarea{
+    width: 80%;
+    height: 40rem;
+    margin: 2rem auto;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "player1 player2"
+    "rule rule"
+    ;
+    align-items: center;
+    justify-items: center;
+}
+
+#player1{
+    grid-area: player1;
+}
+
+#player2{
+    grid-area: player2;
+}
+
+h1{
+    margin-bottom:3rem ;
+}
+
+.players{
+    font-weight: 400;
+    font-size: 1.6rem;
+    font-family: sans-serif;
+    border: .2rem solid #eee;
+    border-radius: .5rem;
+    padding: 5rem;
+}
+
+.progressBar{
+    width:30rem ;
+    margin: 1rem;
+    padding: 2rem;
+}
+
+.rule{
+    grid-area: rule;
+    color: #999;
+    font-size: 2rem;
+    font-family: sans-serif;
+    font-weight: 400;
+}
